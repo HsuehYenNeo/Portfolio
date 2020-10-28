@@ -1,59 +1,46 @@
+import clickImg from '../assets/screenshots/clickclickprint.jpg'
+import memeImg from '../assets/screenshots/memegenerator.jpg'
+
 const projects = [
     {
-        title: 'Project 1',
-        image: "",
-        alt: 'Image of project 1',
+        title: 'Online Games',
+        image: '',
+        alt: 'Image of online games',
+        url: 'https://thirsty-poitras-8b201e.netlify.app/',
         techStack: [
-            'React',
-            'Boostrap',
+            '< React,  ',
+            'Javascript >',
+        ],
+        description:
+            'An online platform of party games, e.g. Taboo, Guess Who?, Charade, etc.'
+    },
+    {
+        title: 'Click-Click-Print',
+        image: clickImg,
+        alt: 'Image of click-click-print',
+        url: 'https://hungry-varahamihira-3686fc.netlify.app/',
+        techStack: [
+            '< React, ',
+            'React DnD, ',
+            'Javascript >',
         ],
         description:
             'An easy, fast and flexible chemical label maker for laboratory'
     },
     {
-        title: 'Project 2',
-        image: "",
-        alt: 'Image of project 2',
+        title: 'Meme Generator',
+        image: memeImg,
+        alt: 'Image of meme generator',
+        url: 'https://laughing-lamarr-1ace5c.netlify.app/',
         techStack: [
-            'React',
-            'Node.js',
+            '< React, ',
+            'Javascript, ',
+            'RESTful API >',
         ],
         description:
-            'Something cool'
+            'A fast and straightforward meme generator app with collection of popular memes'
     },
-    {
-        title: 'Project 3',
-        image: "",
-        alt: 'Image of project 3',
-        techStack: [
-            'React',
-            'Boostrap',
-        ],
-        description:
-            'An easy, fast and flexible chemical label maker for laboratory'
-    },
-    {
-        title: 'Project 4',
-        image: "",
-        alt: 'Image of project 4',
-        techStack: [
-            'React',
-            'Boostrap',
-        ],
-        description:
-            'An easy, fast and flexible chemical label maker for laboratory'
-    },
-    {
-        title: 'Project 5',
-        image: "",
-        alt: 'Image of project 5',
-        techStack: [
-            'React',
-            'Boostrap',
-        ],
-        description:
-            'An easy, fast and flexible chemical label maker for laboratory'
-    }
+
 ]
 
 export default projects;

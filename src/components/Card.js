@@ -4,13 +4,21 @@ import "../App.css"
 function Card(props) {
     
     return (
-        <div className="grid-card">
-            <div className="project-content">
-                <div className="subheading-font">{props.title}</div>
-                <div className="project-img"><img src={props.img} alt={props.alt} /></div>
-                <div className="stacks-wrapper"><div className="dark-bg white-font">{props.techStack}</div></div>
-                <div className="description-font">{props.description}</div>
-            </div>
+        <div>
+            <a href={props.url}>
+                <div className="grid-card">
+                    <div className="project">
+                        <div className="title">{props.title}</div>
+                        <div className="img">
+                            <img src={props.image} alt={props.alt} />
+                        </div>
+                        <div className="description">{props.description}</div>
+                        <div className="stacks">
+                            <div className="stack">{props.techStack}</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
     )
 }
