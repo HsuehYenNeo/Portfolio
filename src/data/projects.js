@@ -1,10 +1,11 @@
-import clickImg from '../assets/screenshots/clickclickprint.jpg'
-import memeImg from '../assets/screenshots/memegenerator.jpg'
+import tabooImg from '../assets/screenshots/taboo.png'
+import clickImg from '../assets/screenshots/clickclickprint.png'
+import memeImg from '../assets/screenshots/memegenerator.png'
 
 const projects = [
     {
         title: 'Online Games',
-        image: '',
+        image: tabooImg,
         alt: 'Image of online games',
         url: 'https://thirsty-poitras-8b201e.netlify.app/',
         techStack: [
@@ -12,7 +13,7 @@ const projects = [
             'Javascript >',
         ],
         description:
-            'An online platform of party games, e.g. Taboo, Guess Who?, Charade, etc.'
+            'An online platform of party games, e.g. Taboo, Guess Who?, etc.'
     },
     {
         title: 'Click-Click-Print',

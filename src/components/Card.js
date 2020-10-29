@@ -13,9 +13,6 @@ function Card(props) {
                             <img src={props.image} alt={props.alt} />
                         </div>
                         <div className="description">{props.description}</div>
-                        <div className="stacks">
-                            <div className="stack">{props.techStack}</div>
-                        </div>
                     </div>
                 </div>
             </a>

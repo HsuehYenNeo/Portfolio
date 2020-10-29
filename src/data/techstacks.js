@@ -16,7 +16,7 @@ const techstacks = [
     {
         category: 'Frontend',
         name: 'React',
-        iconSrc: reactIcon
+        iconSrc: reactIcon,
     },
     {
         category: 'Frontend',
