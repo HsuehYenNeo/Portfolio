@@ -280,7 +280,7 @@ header {
 
 /* SECTION LAYOUT  */ 
 .section-bubble, .section-bubble1, .section-bubble2, .section-bubble3, .section-bubble4, .section-bubble_type-a, .section-bubble_type-b {
-  margin-bottom: 20vw;
+  margin-bottom: calc(100vw / 5);
   position: relative;
 }
 .section-bubble:after, .section-bubble1:after, .section-bubble2:after, .section-bubble3:after, .section-bubble4:after, .section-bubble_type-a:after, .section-bubble_type-b:after {
@@ -993,42 +993,26 @@ header {
 }
 
 
-
-
-@media only screen and (max-width: 1000px) {
-  .App {
-    overflow-x: hidden;
-  }
-  header {
-    height: 70vh;
-  }
-  .headline-container {
-    width: 80vw;
-  }
-  .tech-icon-grid{
-    grid-template-columns: 1fr;
-  }
-
-  #coffee-wrap {
-    top: 70%;
+@media only screen and (max-width: 1280px) {
+  .section-bubble:after, .section-bubble1:after, .section-bubble2:after,  .section-bubble3:after, .section-bubble_type-a:after, .section-bubble_type-b:after {
+    height: 21.6vw;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  header {
-    height: 75vh;
+
+@media only screen and (max-width: 780px) {
+  .App {
+    overflow-x: hidden;
+  }
+
+  .headline-container {
+    width: 80vw;
   }
   .avatar {
     padding: var(--small-size);
   }
   .avatar img{
     width: 70%;
-  }
-  .header-font {
-    font-size: var(--large-font);
-  }
-  .subheader-font {
-    font-size: var(--large-font);
   }
   .subheading-font {
     font: var(--regular-size);
@@ -1037,12 +1021,31 @@ header {
     height: 2rem;
     width: 2rem;
   }
-  .section-font {
+  .tech-icon-grid {
+    grid-template-columns: 1fr;
+  }
+  #coffee-wrap {
+    top: 70%;
+    left: 55%;
+  }
+  .section-bubble:after, .section-bubble1:after, .section-bubble2:after, .section-bubble3:after, .section-bubble_type-a:after, .section-bubble_type-b:after {
+    height: 22vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 70vh;
+  }
+  .header-font {
     font-size: var(--large-font);
   }
+  .subheader-font {
+    font-size: var(--large-font);
+  }  
   .tech-icon-grid {
     grid-template-columns: 300px;
-}
+  }
   .tech-icon {
     padding: var(--small-size);
     height: 25px;
@@ -1050,5 +1053,17 @@ header {
   }
   .tech-name {
     font-size: 0.8rem;
+  }
+  .section-font {
+    font-size: var(--large-font);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section-bubble:after, .section-bubble1:after, .section-bubble2:after,  .section-bubble_type-a:after, .section-bubble_type-b:after {
+    height: 21.4vw;
+  }
+  .section-bubble3:after {
+    height: 21.4vw;
   }
 }
