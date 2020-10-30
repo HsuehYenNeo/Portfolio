@@ -98,9 +98,7 @@ function App() {
           </div>          
         </div>
         <div className="coffee-container"><Coffee /></div>        
-      </div>
-
-      <div className="section-container py-5 section-bubble5"></div>         
+      </div>       
     </div>
   );
 }
