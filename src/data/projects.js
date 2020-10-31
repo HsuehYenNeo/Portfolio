@@ -8,7 +8,7 @@ const projects = [
         title: 'Pun-ny Jokes',
         image: punnyImg,
         alt: 'Image of funny jokes',
-        url: 'https://fervent-shirley-f12d9c.netlify.app/',
+        url: 'https://punny-jokes.netlify.app/',
         techStack: [
             '< Angular,  ',
             'Typescript >',
@@ -20,7 +20,7 @@ const projects = [
         title: 'Online Games',
         image: tabooImg,
         alt: 'Image of online games',
-        url: 'https://thirsty-poitras-8b201e.netlify.app/',
+        url: 'https://online-games-neo.netlify.app/',
         techStack: [
             '< React,  ',
             'Javascript >',
@@ -32,7 +32,7 @@ const projects = [
         title: 'Click-Click-Print',
         image: clickImg,
         alt: 'Image of click-click-print',
-        url: 'https://hungry-varahamihira-3686fc.netlify.app/',
+        url: 'https://clickclickprint.org',
         techStack: [
             '< React, ',
             'React DnD, ',
