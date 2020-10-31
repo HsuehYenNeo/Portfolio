@@ -239,7 +239,7 @@ header {
 .tech-icon-grid {
   padding: var(--large-size);
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 500px);
 }
 
 .tech-icon-container {
@@ -995,6 +995,9 @@ header {
 @media only screen and (max-width: 1280px) {
   .App {
     overflow-x: hidden;
+  }
+  .tech-icon-grid {
+    grid-template-columns: 1fr;
   }
   .section-bubble:after, .section-bubble1:after, .section-bubble2:after,  .section-bubble3:after, .section-bubble_type-a:after, .section-bubble_type-b:after {
     height: 21.vw;
