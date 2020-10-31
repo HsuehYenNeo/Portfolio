@@ -1,4 +1,6 @@
 import reactIcon from '../assets/icons/react.svg'
+import angularIcon from '../assets/icons/angular.svg'
+import tysIcon from '../assets/icons/typescript.svg'
 import jsIcon from '../assets/icons/javascript.svg'
 import htmlIcon from '../assets/icons/html5.svg'
 import cssIcon from '../assets/icons/css3.svg'
@@ -17,6 +19,16 @@ const techstacks = [
         category: 'Frontend',
         name: 'React',
         iconSrc: reactIcon,
+    },
+    {
+        category: 'Frontend',
+        name: 'Angular',
+        iconSrc: angularIcon
+    },
+    {
+        category: 'Frontend',
+        name: 'Typescript',
+        iconSrc: tysIcon,
     },
     {
         category: 'Frontend',

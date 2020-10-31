@@ -1,8 +1,21 @@
+import punnyImg from '../assets/screenshots/punny.png'
 import tabooImg from '../assets/screenshots/taboo.png'
 import clickImg from '../assets/screenshots/clickclickprint.png'
 import memeImg from '../assets/screenshots/memegenerator.png'
 
 const projects = [
+    {
+        title: 'Pun-ny Jokes',
+        image: punnyImg,
+        alt: 'Image of funny jokes',
+        url: 'https://fervent-shirley-f12d9c.netlify.app/',
+        techStack: [
+            '< Angular,  ',
+            'Typescript >',
+        ],
+        description:
+            'A simple joke app which utilizes public API endpoints of different catergories.'
+    },
     {
         title: 'Online Games',
         image: tabooImg,
@@ -26,7 +39,7 @@ const projects = [
             'Javascript >',
         ],
         description:
-            'An easy, fast and flexible chemical label maker for laboratory'
+            'An easy, fast and flexible chemical label maker for laboratory.'
     },
     {
         title: 'Meme Generator',
@@ -39,7 +52,7 @@ const projects = [
             'RESTful API >',
         ],
         description:
-            'A fast and straightforward meme generator app with collection of popular memes'
+            'A fast and simple meme generator app with collection of popular memes.'
     },
 
 ]

@@ -232,9 +232,8 @@ header {
 }
 
 .project .description {
-  padding: var(--large-size);
+  padding: var(--large-size); 
 }
-
 
 /* TECHSTACKS */
 .tech-icon-grid {
