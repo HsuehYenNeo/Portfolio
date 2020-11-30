@@ -2,11 +2,20 @@ import React from "react";
 import { FaAt, FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import techstacks from "./data/techstacks";
 import projects from "./data/projects";
+import skills from "./data/skills";
+
 import Card from "./components/Card";
+import List from "./components/List";
 import Icon from "./components/Icon";
 import Coffee from "./Coffee";
+
 import profile from "./assets/pic.jpg";
+import webSVG from "./assets/expertise/web.svg";
+import coachingSVG from "./assets/expertise/coaching.svg";
+import scienceSVG from "./assets/expertise/science.svg";
+
 import "./App.css";
+import "./assets.css";
 
 function App() {
   return (
@@ -19,7 +28,7 @@ function App() {
             </div>
             <div className="header-font white-font">Neo Hsueh Yen</div>
             <div className="subheader-font white-font">
-              A full stack web developer <br /> with a passion for frontend
+              Full stack web developer <br /> with a passion for frontend
             </div>
             <div className="icons-container">
               <a href="https://www.linkedin.com/in/hsueh-yen-neo/">
@@ -50,7 +59,6 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {" "}
                 <div className="icon white-bg">
                   <FaTwitter />
                 </div>
@@ -156,10 +164,54 @@ function App() {
 
       <div className="section-container py-5 section-bubble3">
         <div className="headline-container light-font">
-          <div className="section-font ">Experience & Expertise </div>
+          <div className="section-font teal-font">Experience & Expertise </div>
+
+          <div className="skills-grid">
+            <div className="skills-container">
+              <div className="title-wrapper">
+                <img src={webSVG} alt="web development" />
+                <div className="skill-title">Web Development</div>
+              </div>
+              <div className="skills">
+                {skills
+                  .filter((skill) => skill.type === "Web Development")
+                  .map((webDevelopment) => (
+                    <List skill={webDevelopment.skill} />
+                  ))}
+              </div>
+            </div>
+            <div className="skills-container">
+            <div className="title-wrapper">
+                <img src={coachingSVG} alt="web development" />
+              <div className="skill-title">Coaching & Management</div>
+              </div>
+              <div className="skills">
+                {skills
+                  .filter(
+                    (skill) =>
+                      skill.type === "Coaching and Programme Management"
+                  )
+                  .map((coaching) => (
+                    <List skill={coaching.skill} />
+                  ))}
+              </div>
+            </div>
+            <div className="skills-container">
+            <div className="title-wrapper">
+                <img src={scienceSVG} alt="web development" />
+              <div className="skill-title">Scientific Skills</div>
+              </div>
+              <div className="skills">
+                {skills
+                  .filter((skill) => skill.type === "Scientific Skills")
+                  .map((science) => (
+                    <List skill={science.skill} />
+                  ))}
+              </div>
+            </div>
+          </div>
           <div className="subheading-font white-font">
-            More information about my work and experience, please visit the
-            following sites:
+            For more information, check out the links below:
           </div>
           <div className="icons-container">
             <a

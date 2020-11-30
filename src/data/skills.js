@@ -2,11 +2,7 @@
 const skills = [
      {
           type: "Web Development",
-          skill: "Website Development & Deployment"
-     },
-     {
-          type: "Web Development",
-          skill: "DevOps (Monitoring, CI/CD, Deployment)"
+          skill: "Development & Deployment"
      },
      {
           type: "Web Development",
@@ -17,24 +13,28 @@ const skills = [
           skill: "UX/UI Fundamentals"
      },
      {
-          type: "Coaching and Programme Management",
-          skill: "Curriculum Planning, Development and Evaluation"
+          type: "Web Development",
+          skill: "DevOps (Monitoring, CI/CD, Deployment)"
      },
      {
           type: "Coaching and Programme Management",
-          skill: "Programme development and management"
+          skill: "Training & Coaching"
      },
      {
           type: "Coaching and Programme Management",
-          skill: "Deliver Training & Coaching"
+          skill: "Program/Project Management"
      },
      {
           type: "Coaching and Programme Management",
-          skill: "Content Creator (Documentation and Webpages)"
+          skill: "Curriculum Development & Evaluation"
+     },
+     {
+          type: "Coaching and Programme Management",
+          skill: "Content Creator (Documentation & Webpages)"
      },
      {
           type: "Scientific Skills",
-          skill: "Design logical and analytical processes"
+          skill: "Design logical processes"
      },
      {
           type: "Scientific Skills",
@@ -42,12 +42,12 @@ const skills = [
      },
      {
           type: "Scientific Skills",
-          skill: "Critical Analysis & Resolving Problems"
+          skill: "Report Writing & Documentation"
      },
      {
           type: "Scientific Skills",
-          skill: ""
-     },
+          skill: "Analytical Ways Resolving Problems"
+     }
 ]
 
 export default skills
