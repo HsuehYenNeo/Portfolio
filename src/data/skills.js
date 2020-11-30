@@ -34,7 +34,7 @@ const skills = [
      },
      {
           type: "Scientific Skills",
-          skill: "Design logical processes"
+          skill: "Design Logical Processes"
      },
      {
           type: "Scientific Skills",
