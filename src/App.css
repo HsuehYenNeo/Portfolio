@@ -82,6 +82,14 @@ a {
   width: 50vw;
 }
 
+.link {
+  color: var(--teal);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: var(--orange);
+}
 
 /* HEADER */
 header {
@@ -102,17 +110,22 @@ header {
 .header-font {
   font-size: 2.5rem;
   font-weight: bold;
+  padding: var(--small-size);
+  color: var(--light-teal)
 }
 
 .subheader-font {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: var(--small-size);
 }
 
 .avatar {
   padding: var(--large-size);
 }
+
 .avatar img{
   border-radius: 50%;
+  width: 250px;
 }
 
 .svg {
@@ -175,11 +188,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
 }
+
 .grids-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .grid-card {
@@ -223,12 +236,18 @@ header {
 }
 
 .project .stacks {
-  display: grid;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  margin: var(--small-size) 0;
 }
 
 .project .stack {
   padding: var(--small-size);
+  margin: var(--small-size);
+  background-color: var(--mid-grey);
+  color: var(--white);
+  border-radius: 4px;
 }
 
 .project .description {
@@ -275,7 +294,15 @@ header {
   font-weight: bold;
 }
 
+/* ABOUT SECTION*/
+.profile-pic {
+  padding: var(--large-size)
+}
 
+.profile-pic img {
+  width: 250px;
+  border-radius: 50%;
+}
 
 /* SECTION LAYOUT  */ 
 .section-bubble, .section-bubble1, .section-bubble2, .section-bubble3, .section-bubble4, .section-bubble_type-a, .section-bubble_type-b {
@@ -295,6 +322,7 @@ header {
 .section-bubble1 {
   background-color: var(--white);
 }
+
 .section-bubble1:after {
   background-color: var(--light-teal);
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23faf9f9' viewBox='0 0 1185 250'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
@@ -340,6 +368,10 @@ header {
 
 
 /*  COFFEE SVG  */
+.coffee {
+  padding: 20px 0;
+}
+
 .coffee-container {
   height: 300px;
 }
@@ -996,6 +1028,9 @@ header {
   .App {
     overflow-x: hidden;
   }
+  .headline-container {
+    width: 70vw;
+  }
   .tech-icon-grid {
     grid-template-columns: 1fr;
   }
@@ -1042,10 +1077,13 @@ header {
     height: 70vh;
   }
   .header-font {
-    font-size: var(--large-font);
+    font-size: 2rem;
   }
   .subheader-font {
-    font-size: var(--large-font);
+    font-size: 1.3rem;
+  }
+  .avatar img{
+    width: 50%;
   }  
   .tech-icon-grid {
     grid-template-columns: 300px;

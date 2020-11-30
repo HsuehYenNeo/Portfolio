@@ -27,12 +27,12 @@ const techstacks = [
     },
     {
         category: 'Frontend',
-        name: 'Typescript',
+        name: 'TypeScript',
         iconSrc: tysIcon,
     },
     {
         category: 'Frontend',
-        name: 'Javascript',
+        name: 'JavaScript',
         iconSrc: jsIcon
     },
     {
