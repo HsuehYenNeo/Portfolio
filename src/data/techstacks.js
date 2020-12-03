@@ -2,7 +2,7 @@ import reactIcon from '../assets/icons/react.svg'
 import angularIcon from '../assets/icons/angular.svg'
 import tysIcon from '../assets/icons/typescript.svg'
 import jsIcon from '../assets/icons/javascript.svg'
-import htmlIcon from '../assets/icons/html5.svg'
+import phpIcon from '../assets/icons/php.svg'
 import cssIcon from '../assets/icons/css3.svg'
 
 import nodeIcon from '../assets/icons/nodejs.svg'
@@ -37,8 +37,8 @@ const techstacks = [
     },
     {
         category: 'Frontend',
-        name: 'HTML5',
-        iconSrc: htmlIcon
+        name: 'PHP',
+        iconSrc: phpIcon
     },
     {
         category: 'Frontend',

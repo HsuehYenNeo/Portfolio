@@ -256,6 +256,11 @@ header {
   width: 90px;
 }
 
+.tech-text {
+  font-size: var(--large-font);
+  font-weight: bold;
+  padding: var(--regular-size) 0;
+}
 .tech-icon {
   display: flex;
   padding: var(--regular-size);
@@ -268,6 +273,7 @@ header {
 .tech-icon img {
   width: 100%;
 }
+
 
 .tech-name {
   font-size: var(--regular-size);

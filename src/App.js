@@ -102,7 +102,8 @@ function App() {
             >
               Github
             </a>{" "}
-            page to view current projects. <br/> Current project: A web app to diagnose color blindness.
+            page to view current projects. <br /> Current project: A web app to
+            diagnose color blindness.
           </div>
         </div>
         <div className="grids-container">
@@ -125,38 +126,47 @@ function App() {
         <div className="headline-container">
           <div className="section-font light-font text-shadow">Tech Stack</div>
           <div className="tech-icon-grid">
-            <div className="tech-icon-container">
-              {techstacks
-                .filter((techstack) => techstack.category === "Frontend")
-                .map((frontend) => (
-                  <Icon
-                    name={frontend.name}
-                    src={frontend.iconSrc}
-                    alt={`Icon of ${frontend.name}`}
-                  />
-                ))}
+            <div className="tech-container">
+              <div className="tech-text">Frontend</div>
+              <div className="tech-icon-container">
+                {techstacks
+                  .filter((techstack) => techstack.category === "Frontend")
+                  .map((frontend) => (
+                    <Icon
+                      name={frontend.name}
+                      src={frontend.iconSrc}
+                      alt={`Icon of ${frontend.name}`}
+                    />
+                  ))}
+              </div>
             </div>
-            <div className="tech-icon-container">
-              {techstacks
-                .filter((techstack) => techstack.category === "Backend")
-                .map((backend) => (
-                  <Icon
-                    name={backend.name}
-                    src={backend.iconSrc}
-                    alt={`Icon of ${backend.name}`}
-                  />
-                ))}
+            <div className="tech-container">
+              <div className="tech-text">Backend</div>
+              <div className="tech-icon-container">
+                {techstacks
+                  .filter((techstack) => techstack.category === "Backend")
+                  .map((backend) => (
+                    <Icon
+                      name={backend.name}
+                      src={backend.iconSrc}
+                      alt={`Icon of ${backend.name}`}
+                    />
+                  ))}
+              </div>
             </div>
-            <div className="tech-icon-container">
-              {techstacks
-                .filter((techstack) => techstack.category === "Others")
-                .map((other) => (
-                  <Icon
-                    name={other.name}
-                    src={other.iconSrc}
-                    alt={`Icon of ${other.name}`}
-                  />
-                ))}
+            <div className="tech-container">
+              <div className="tech-text">Tools</div>
+              <div className="tech-icon-container">
+                {techstacks
+                  .filter((techstack) => techstack.category === "Others")
+                  .map((other) => (
+                    <Icon
+                      name={other.name}
+                      src={other.iconSrc}
+                      alt={`Icon of ${other.name}`}
+                    />
+                  ))}
+              </div>
             </div>
           </div>
         </div>
@@ -181,9 +191,9 @@ function App() {
               </div>
             </div>
             <div className="skills-container">
-            <div className="title-wrapper">
+              <div className="title-wrapper">
                 <img src={coachingSVG} alt="web development" />
-              <div className="skill-title">Coaching & Management</div>
+                <div className="skill-title">Coaching & Management</div>
               </div>
               <div className="skills">
                 {skills
@@ -197,9 +207,9 @@ function App() {
               </div>
             </div>
             <div className="skills-container">
-            <div className="title-wrapper">
+              <div className="title-wrapper">
                 <img src={scienceSVG} alt="web development" />
-              <div className="skill-title">Scientific Skills</div>
+                <div className="skill-title">Scientific Skills</div>
               </div>
               <div className="skills">
                 {skills
