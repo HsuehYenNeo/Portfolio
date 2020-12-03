@@ -102,7 +102,7 @@ function App() {
             >
               Github
             </a>{" "}
-            page to view current projects.
+            page to view current projects. <br/> Current project: A web app to diagnose color blindness.
           </div>
         </div>
         <div className="grids-container">
