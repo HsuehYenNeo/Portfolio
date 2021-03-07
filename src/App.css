@@ -24,7 +24,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -274,7 +274,6 @@ header {
   width: 100%;
 }
 
-
 .tech-name {
   font-size: var(--regular-size);
   color: var(--dark-font);
@@ -300,10 +299,10 @@ header {
 .title-wrapper {
   display: flex;
   border-bottom: 1px solid var(--light-teal);
-  padding: var(--small-size) 0; 
+  padding: var(--small-size) 0;
 }
 
-.title-wrapper svg{
+.title-wrapper svg {
   padding: var(--small-size) 0;
 }
 
@@ -315,7 +314,6 @@ header {
   font-weight: bold;
   padding: var(--small-size);
   margin-left: 5px;
-
 }
 
 .skills {
@@ -329,7 +327,7 @@ header {
   padding-inline-start: 20px;
 }
 
-.skill li ::marker{
+.skill li ::marker {
   color: var(--light-teal);
 }
 
@@ -438,5 +436,23 @@ header {
   }
   .section-bubble3:after {
     height: 21.4vw;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .header-container {
+    height: 90%;
+  }
+  .avatar {
+    padding: var(--regular-size);
+  }
+  .avatar img {
+    width: 200px;
+  }
+  .header-font {
+    font-size: 2rem;
+  }
+  .subheader-font {
+    font-size: 1.3rem;
   }
 }

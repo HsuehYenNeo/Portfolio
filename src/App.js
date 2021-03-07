@@ -96,7 +96,7 @@ function App() {
             Check out my deployed app or visit my{" "}
             <a
               href="https://github.com/Hangrykat"
-              class="link"
+              className="link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -110,6 +110,7 @@ function App() {
           <div className="grids-wrapper">
             {projects.map((project) => (
               <Card
+                key={project.title}
                 title={project.title}
                 image={project.image}
                 techStacks={project.techStacks}
@@ -133,6 +134,7 @@ function App() {
                   .filter((techstack) => techstack.category === "Frontend")
                   .map((frontend) => (
                     <Icon
+                      key={frontend.name}
                       name={frontend.name}
                       src={frontend.iconSrc}
                       alt={`Icon of ${frontend.name}`}
@@ -147,6 +149,7 @@ function App() {
                   .filter((techstack) => techstack.category === "Backend")
                   .map((backend) => (
                     <Icon
+                      key={backend.name}
                       name={backend.name}
                       src={backend.iconSrc}
                       alt={`Icon of ${backend.name}`}
@@ -161,6 +164,7 @@ function App() {
                   .filter((techstack) => techstack.category === "Others")
                   .map((other) => (
                     <Icon
+                      key={other.name}
                       name={other.name}
                       src={other.iconSrc}
                       alt={`Icon of ${other.name}`}
@@ -185,8 +189,8 @@ function App() {
               <div className="skills">
                 {skills
                   .filter((skill) => skill.type === "Web Development")
-                  .map((webDevelopment) => (
-                    <List skill={webDevelopment.skill} />
+                  .map((webDevelopment, index) => (
+                    <List skill={webDevelopment.skill} key={index}/>
                   ))}
               </div>
             </div>
@@ -201,8 +205,8 @@ function App() {
                     (skill) =>
                       skill.type === "Coaching and Programme Management"
                   )
-                  .map((coaching) => (
-                    <List skill={coaching.skill} />
+                  .map((coaching, index) => (
+                    <List skill={coaching.skill} key={index} />
                   ))}
               </div>
             </div>
@@ -214,8 +218,8 @@ function App() {
               <div className="skills">
                 {skills
                   .filter((skill) => skill.type === "Scientific Skills")
-                  .map((science) => (
-                    <List skill={science.skill} />
+                  .map((science, index) => (
+                    <List skill={science.skill} key={index}/>
                   ))}
               </div>
             </div>
