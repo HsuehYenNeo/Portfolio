@@ -48,7 +48,7 @@ const projects = [
         title: 'Click-Click-Print',
         image: clickImg,
         alt: 'Image of click-click-print',
-        url: 'https://clickclickprint.org',
+        url: 'click-click-print.netlify.app',
         techStacks: [
             'React',
             'React DnD',
@@ -61,7 +61,7 @@ const projects = [
         title: 'Meme Generator',
         image: memeImg,
         alt: 'Image of meme generator',
-        url: 'https://laughing-lamarr-1ace5c.netlify.app/',
+        url: 'https://quick-meme.netlify.app',
         techStacks: [
             'React',
             'JavaScript',
